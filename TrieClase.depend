@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1651796153 source:c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\main.cpp
+	<iostream>
+	"Trie.h"
+
+1651793453 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\trie.h
+	"TrieNode.h"
+	<stdexcept>
+	<iostream>
+	<string>
+
+1652244758 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\trienode.h
+	"BSTreeDictionary.h"
+
+1651614786 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\bstreedictionary.h
+	"Dictionary.h"
+	"KVPair.h"
+	"BSTree.h"
+	"DLinkedList.h"
+
+1651014184 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\dictionary.h
+	"List.h"
+
+1646806072 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\list.h
+
+1650579223 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\kvpair.h
+	<iostream>
+
+1651183777 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\bstree.h
+	"stdexcept"
+	"BSTNode.h"
+	"DLinkedList.h"
+	<iostream>
+
+1651795076 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\bstnode.h
+
+1651796348 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\dlinkedlist.h
+	"DNode.h"
+	"List.h"
+	<stdexcept>
+	<iostream>
+
+1651793560 c:\users\michael\onedrive\documentos\tec\iii semestre\estructuras de datos\trieclase\include\dnode.h
+
