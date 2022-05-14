@@ -121,6 +121,23 @@ public:
         getMatchesAux(current, prefix, words);
         return words;
     }
+    void lectura(){
+            ifstream archivo; //para lectura
+            string arch;
+            cout<<"Ingrese el nombre del archivo que desea abrir: "; cin>>arch;
+            string texto;
+
+            archivo.open(arch,ios::in); //abriendo archivo modo lectura
+            if(archivo.fail()){
+                cout<<"No se pudo abrir el archivo."<<endl;
+                exit(1);
+            }
+            while(!archivo.eof()){//mientras no sea el final del archivo
+                    getline(archivo, texto); // Se copia lo del archivo
+                    cout<<texto<<endl;
+            }
+            archivo.close();
+        }
 };
 
 #endif // TRIE_H
