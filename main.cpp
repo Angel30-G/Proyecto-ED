@@ -4,6 +4,7 @@
 #include<fstream>
 #include <windows.h>
 #include <sstream>
+#include "BSTreeDictionary.h"
 #include "DLinkedList.h"
 #include "Trie.h"
 
@@ -105,9 +106,13 @@ void lectura(){
 
 void separador(DLinkedList<string> *lista){
     DLinkedList<string> *palabras=new DLinkedList<string>();
+    BSTreeDictionary<int, string> linea;
     string palabra;
+    int lineas;
     for(lista->goToStart(); !lista->atEnd(); lista->next()){
         stringstream input_stringstream(lista->getElement());
+        linea.insert(lineas, palabra);
+        lineas++;
         while (getline(input_stringstream, palabra, ' ')){
             stringstream input_stringstream(palabra);
             while (getline(input_stringstream, palabra, ',')){
@@ -136,11 +141,20 @@ void separador(DLinkedList<string> *lista){
                                                             stringstream input_stringstream(palabra);
                                                             while (getline(input_stringstream, palabra, '/')){
                                                                 stringstream input_stringstream(palabra);
+                                                                while (getline(input_stringstream, palabra, '¡')){
+                                                                    stringstream input_stringstream(palabra);
+                                                                    while (getline(input_stringstream, palabra, '!')){
+                                                                       stringstream input_stringstream(palabra);
+                                                                      while (getline(input_stringstream, palabra, '¿')){
+                                                                        stringstream input_stringstream(palabra);
+                                                                        while (getline(input_stringstream, palabra, '?')){
+                                                                          stringstream input_stringstream(palabra);
                                                                 while (getline(input_stringstream, palabra, '_')){
-                                                                    if (!t.containsWord(palabra)){
                                                                         cout<<palabra<<endl;
                                                                         palabras->insert(palabra);
-                                                                        t.insert(palabra);}
+                                                                        linea.getKeys();
+                                                                        linea.getValues();
+                                                                        t.insert(palabra);
                                                                 }
                                                             }
                                                         }
@@ -154,8 +168,11 @@ void separador(DLinkedList<string> *lista){
                         }
                     }
                 }
-            }
+             }
+           }
         }
+      }
     }
+   }
+  }
 }
-
