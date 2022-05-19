@@ -90,6 +90,7 @@ void lectura(){
             string arch;
             cout<<"Ingrese el nombre del archivo que desea abrir: "; cin>>arch;
             string texto;
+            int line = 0;
             DLinkedList<string> *lista=new DLinkedList<string>();
             Dictionary<int, string> *linea = new BSTreeDictionary<int, string>();
 
